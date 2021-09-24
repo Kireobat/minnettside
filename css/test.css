@@ -1,0 +1,68 @@
+﻿
+/*Grid*/
+
+.item1 {
+    grid-area: left;
+}
+
+.item2 {
+    grid-area: right;
+}
+
+.item3 {
+    grid-area: footer;
+}
+
+.grid{
+    display:grid;
+    grid-template-areas:
+        'left right'
+        'footer footer';
+    grid-gap: 1em;
+    background-color: #ccc;
+    padding: 20px;
+}
+    .grid > div {
+        background-color: #ccc;
+        text-align: center;
+        padding: 0px 0;
+        font-size: 3em;
+    }
+ /*Hamburger meny*/
+/*Denne koden er tatt fra https://webcodeflow.com/hamburger-menu-css/#:~:text=Hamburger%20Overlay%20Menu%20%E2%80%93%20A%20minimal%2C%20responsive%2C%20CSS,CSS.%20How%20to%20make%20use%20of%20it%3A%201 */
+
+.menu > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding: 1rem 0;
+}
+
+.menu > div a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.menu a:hover {
+    color: rgb(230, 177, 177);
+    transition: color 0.3s ease-in;
+}

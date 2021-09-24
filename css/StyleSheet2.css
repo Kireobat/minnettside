@@ -1,0 +1,126 @@
+﻿
+body {
+    background-color: #90AFC5;
+}
+
+h1 {
+    color: #2A3132;
+    padding: 50px;
+    background-color: #336B87;
+}
+
+h2 {
+    color: #2A3132;
+}
+
+/*Vertical meny*/
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+}
+
+    .vertical-menu a {
+        background-color: #eee; /* Grey background color */
+        color: black; /* Black text color */
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+        .vertical-menu a:hover {
+            background-color: #90AFC5; /* Dark grey background on mouse-over */
+        }
+
+
+
+        .vertical-menu a.active {
+            background-color: #04AA6D; /* Add a green color to the "active/current" link */
+            color: white;
+        }
+
+        /*Grid*/
+
+.item1 {
+    grid-area: main1;
+}
+
+.item2 {
+    grid-area: main2;
+}
+
+.item3 {
+    grid-area: main3;
+}
+
+.item4 {
+    grid-area: main4;
+}
+
+.item5 {
+    grid-area: main5;
+}
+
+.item6 {
+    grid-area: main6;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'main1 main2 main3'
+        'main4 main5 main6';
+    grid-gap: 10px;
+    background-color: #336B87;
+    padding: 0px;
+}
+
+    .grid-container > div {
+        background-color: #90AFC5;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 30px;
+    }
+
+
+/* On screens that are 1080px or less */
+@media screen and (max-width: 1080px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'main1'
+            'main2'
+            'main3';
+        grid-gap: 20px;
+        background-color: #336B87;
+        padding: 30px;
+    }
+
+        .grid-container > div {
+            background-color: #90AFC5;
+            text-align: center;
+            padding: 0px 0;
+            font-size: 30px;
+        }
+}
+
+
+    /*Top Meny*/
+
+div.scrollmenu {
+    background-color: aliceblue;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }

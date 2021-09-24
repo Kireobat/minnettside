@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/StyleSheet2.css" />
+    <title>Programmering</title>
+
+    <script>
+    var e = new Audio("../videos/e.mp3");
+    e.src(e.mp3);
+    function NewPage() {
+        window.location = "../programfag.html";
+}
+
+    function loadContent (num) {
+        e.play();
+
+        var div1 = document.getElementById("div1");
+        div1.innerHTML = "loaded content for section "+num;
+
+    }
+
+    </script>
+
+</head>
+<body>
+
+    <div class="scrollmenu">
+        <a href="../index.html">Home</a>
+    </div>
+
+    <h1>Programmering</h1>
+    <h2></h2>
+    <div class="vertical-menu">
+        <a href="minnettside1.rar" download>
+            <img src="../bilderwin/winrar.png" width="50" alt="Winrar logo">
+            <p>Website sourcecode</p>
+        </a>
+        <a href="runthis.bat" download>
+            <img src="../bilderwin/virus.png" width="50" alt="Image of a website">
+            <p>Pacman, but for your ram</p>
+        </a>
+        <a onclick="loadContent(1)">
+
+            Jeg liker ikke ørene mine
+
+            <nav id="nav1">
+                
+                <div id="div1"> default content...........</div>
+            </nav>
+        </a>
+
+
+    </div>
+</body>
+</html>
