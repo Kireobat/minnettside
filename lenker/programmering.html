@@ -6,23 +6,6 @@
     <link rel="stylesheet" type="text/css" href="../css/StyleSheet2.css" />
     <title>Programmering</title>
 
-    <script>
-    var e = new Audio("../videos/e.mp3");
-    e.src(e.mp3);
-    function NewPage() {
-        window.location = "../programfag.html";
-}
-
-    function loadContent (num) {
-        e.play();
-
-        var div1 = document.getElementById("div1");
-        div1.innerHTML = "loaded content for section "+num;
-
-    }
-
-    </script>
-
 </head>
 <body>
 
@@ -32,26 +15,31 @@
 
     <h1>Programmering</h1>
     <h2></h2>
-    <div class="vertical-menu">
-        <a href="minnettside1.rar" download>
-            <img src="../bilderwin/winrar.png" width="50" alt="Winrar logo">
-            <p>Website sourcecode</p>
-        </a>
-        <a href="runthis.bat" download>
-            <img src="../bilderwin/virus.png" width="50" alt="Image of a website">
-            <p>Pacman, but for your ram</p>
-        </a>
-        <a onclick="loadContent(1)">
-
-            Jeg liker ikke ørene mine
-
-            <nav id="nav1">
-                
-                <div id="div1"> default content...........</div>
-            </nav>
-        </a>
-
-
+    <div class="grid-container">
+        <div class="item1">
+            <div class="vertical-menu">
+                <a href="minnettside1.rar" download>
+                    <img src="../bilderwin/winrar.png" width="50" alt="Rar file download">
+                    <p>Website sourcecode</p>
+                </a>
+                <a href="runthis.bat" download>
+                    <img src="../bilderwin/virus.png" width="50" alt="A homemade virus">
+                    <p>My own virus</p>
+                </a>
+                <a href="Kaffe.zip" download>
+                    <img src="../bilderwin/winrar.png" width="50" alt="Zip file download">
+                    <p>Kaffe Diem App</p>
+                </a>
+            </div>
+        </div>
+        <div class="item2">
+            <video width="25%" controls >
+                <source src="../videos/lego.mp4" type="video/mp4" alt="Norges berieste nisselue"">
+            </video>
+        </div>
+        <div class="item3">
+            <img src="../bilderwin/blokkkodelego.png" width="500" alt="Lego Kode">
+        </div>
     </div>
 </body>
 </html>

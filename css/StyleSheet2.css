@@ -68,7 +68,7 @@ h2 {
     display: grid;
     grid-template-areas:
         'main1 main2 main3'
-        'main4 main5 main6';
+        ;
     grid-gap: 10px;
     background-color: #336B87;
     padding: 0px;

@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --menu-speed: 0.75s;
+}
+body {
+  font-family: "Roboto";
+  line-height: 1.4;
+}
+
+h2 {
+    color: #2A3132;
+    font: bold 10px verdana;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+.item1 {
+    grid-area: left;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: right;
+}
+
+.item3 {
+    grid-area: footer;
+}
+
+.item4 {
+    grid-area: emptyL;
+    opacity: 0;
+}
+
+.item5 {
+    grid-area: emptyL;
+    opacity: 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'emptyL left right emptyR'
+        'emptyL footer footer emptyR';
+    grid-gap: 12em;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+    .grid > div {
+        background-color: #ccc;
+        text-align: center;
+        padding: 0px 0;
+        font-size: 20px;
+    }
+
+.fag1 {
+    grid-area: nat;
+}
+.fag2 {
+    grid-area: hist;
+}
+.fag3 {
+    grid-area: prog;
+}
+.fag4 {
+    grid-area: tek;
+}
+.fag5 {
+    grid-area: eng;
+}
+.annet {
+    grid-area: annet;
+}
+
+
+.grid2 {
+    display: grid;
+    grid-template-areas:
+        'nat hist prog'
+        'tek eng annet';
+    grid-gap: 12em;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.grid2 > div {
+    background-color: #ccc;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 20px;
+}
+
+    
+
+    @media (max-width:1080px) {
+        .grid {
+            display: grid;
+            grid-template-areas:
+                'left left'
+                'right right';
+            grid-gap: 10px;
+            background-color: #ccc;
+            padding: 20px;
+        }    }
+
+

